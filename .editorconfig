@@ -1,0 +1,10 @@
+##################################################
+#  DO NOT EDIT THIS WITHOUT NOTIFYING THE OWNER  #
+##################################################
+root = true
+
+# All Files
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
