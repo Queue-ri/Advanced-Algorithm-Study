@@ -69,16 +69,19 @@ int main() {
 		ans += press(8, status[4]);
 
 		ans += press(0, status[1]);
-		ans += press(6, status[3]);
-
-		bool s1 = status[0] != status[2];
-		bool s2 = status[14] != status[15];
-		bool s3 = status[2] != status[14];
-		if (s1 || s2 || s3) {
+		if (status[0] != status[2]) {
 			cout << -1 << endl;
 			continue;
 		}
 		ans += press(5, status[0]);
+
+		bool s1 = status[3] != status[14];
+		bool s2 = status[14] != status[15];
+		if (s1 || s2) {
+			cout << -1 << endl;
+			continue;
+		}
+		ans += press(6, status[3]);
 
 		cout << ans << endl;
 	}
