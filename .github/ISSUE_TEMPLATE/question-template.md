@@ -1,12 +1,12 @@
 ---
 name: Question Template
 about: You can add or modify the contents.
-title: "[<problem>] <question title>"
-labels: question
+title: "[<문제 ID>] <질문 제목>"
+labels: 2기, question
 assignees: ''
 
 ---
 
 ***
-- Related to :  <tag issue number>
+- Related to :  <Issue 번호>
 ***
