@@ -1,4 +1,3 @@
-# Advanced-Algorithm-Study
 <p align="center"> 
     <img src="https://user-images.githubusercontent.com/77003554/149657444-3df0e0b0-21e1-44f3-90ef-fc70e1f0775a.png">
 </p> 
