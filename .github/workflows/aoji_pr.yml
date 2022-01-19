@@ -1,0 +1,39 @@
+name: AOJI PR
+
+on: 
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    aoji:
+        name: Run AOJI
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                python-version: ['3.10']
+        
+        steps:
+          - uses: actions/checkout@v2
+            with:
+                fetch-depth: 3
+                
+          - name: Run AOJI
+            run: |
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt
+                ./.github/aoji.sh ${{ secrets.AOJ_ID }} ${{ secrets.AOJ_PASSWD }} ${{ github.event.pull_request.head.sha }}
+            
+          - name: Check file existence
+            id: check_files
+            uses: andstor/file-existence-action@v1
+            with:
+                files: ".github/aoji_report.md"
+            
+          - name: Comment Report
+            if: steps.check_files.outputs.files_exists == 'true'
+            uses: machine-learning-apps/pr-comment@master
+            env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            with:
+                path: .github/aoji_report.md
