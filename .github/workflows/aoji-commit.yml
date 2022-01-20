@@ -1,0 +1,46 @@
+name: AOJI Commit
+
+on: 
+    push:
+        branches:
+            - main
+
+jobs:
+    aoji:
+        name: Run AOJI
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                python-version: ['3.10']
+        
+        steps:
+          - uses: actions/checkout@v2
+            with:
+                fetch-depth: 2
+                
+          - name: Run AOJI
+            run: |
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt
+                ./.github/aoji.sh ${{ secrets.AOJ_ID }} ${{ secrets.AOJ_PASSWD }} ${{ github.sha }}
+            
+          - name: Check file existence
+            id: check_files
+            uses: andstor/file-existence-action@v1
+            with:
+                files: ".github/aoji_report.md"
+            
+          - id: get-comment-body
+            if: steps.check_files.outputs.files_exists == 'true'
+            run: |
+                body=$(cat .github/aoji_report.md)
+                body="${body//'%'/'%25'}"
+                body="${body//$'\n'/'%0A'}"
+                body="${body//$'\r'/'%0D'}"
+                echo ::set-output name=body::"$body"
+                
+          - name: Comment Report
+            if: steps.check_files.outputs.files_exists == 'true'
+            uses: peter-evans/commit-comment@v1
+            with:
+                body: ${{ steps.get-comment-body.outputs.body }}
