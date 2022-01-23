@@ -80,7 +80,10 @@ for JID in JID_list:
         pass
 
     if 'AOJI UUID' in uuid_comment:
-        parsed_uuid = uuid_comment[31:67]
+        if lang == 'py3':
+            parsed_uuid = uuid_comment[29:65]
+        else:
+            parsed_uuid = uuid_comment[31:67]
         print('Parsed: ' + parsed_uuid + ' from ' + str(JID))
         if parsed_uuid == submit_uuid:
             match_JID = JID
