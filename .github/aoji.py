@@ -137,6 +137,8 @@ with open(".github/aoji_report.md", "w", encoding="utf-8") as report:
 
     if sys.argv[6] != str(match_df['수행시간'].values[0]):
         report.write("\n⚠ Performance doesn't match. (±4ms might be a temporary AOJ error)\n")
+        if lang == 'py3':
+            report.write("\n📢 Python code has a wider error range in AOJ.\n")
 
     report.write("\n## 🎯 Tested Commit\n")
     report.write("|Hash|Language|File Path|Performance|\n")
