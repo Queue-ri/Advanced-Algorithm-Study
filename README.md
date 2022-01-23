@@ -6,8 +6,8 @@
 
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square"></a>&nbsp;
-<a href="https://github.com/Queue-ri/aoji-test/actions/workflows/commit-aoji.yml"><img src="https://github.com/Queue-ri/aoji-test/actions/workflows/commit-aoji.yml/badge.svg"></a>&nbsp;
-<a href="https://github.com/Queue-ri/aoji-test/actions/workflows/pr-aoji.yml"><img src="https://github.com/Queue-ri/aoji-test/actions/workflows/pr-aoji.yml/badge.svg?on=pull-request"></a>&nbsp;
+<a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-commit.yml"><img src="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-commit.yml/badge.svg"></a>&nbsp;
+<a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-pr.yml"><img src="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-pr.yml/badge.svg?on=pull-request"></a>&nbsp;
 </p>
 
 <p align="center">
