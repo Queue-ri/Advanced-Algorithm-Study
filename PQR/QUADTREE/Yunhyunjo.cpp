@@ -3,35 +3,31 @@
 
 using namespace std;
 
-string makeQuadtree();
-string str;
 int i;
+string s;
 
-int main(void) {
-	int c;
-	cin >> c;
-	
-	while (c--) {
-		i = -1;
-		cin >> str;
-		cout << makeQuadtree() << "\n";
-	}
+string quadtree() {
+
+    if (s[i] != 'x') return ((s[i++] == 'b') ? "b" : "w");
+    i++;
+    string one = quadtree();
+    string two = quadtree();
+    string three = quadtree();
+    string four = quadtree();
+
+    return "x" + three + four + one + two;
 }
 
-// str을 0부터 돌며 x일경우 재귀호출을 통해 각각 분할 해서 넣어주고 마지막 return으로 상하 변경해서 return
+int main(void)
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
 
-string makeQuadtree(void) {
-
-	i++;
-
-	if (str[i] == 'b' || str[i] == 'w')     // b나 w면 그 값을 return
-		return ((str[i] == 'b')? "b":"w");
-
-	string leftUp = makeQuadtree();
-	string rightUp = makeQuadtree();
-	string leftDn = makeQuadtree();
-	string rightDn = makeQuadtree();
-
-	return "x" + leftDn + rightDn + leftUp + rightUp;  // 상하 변경해서 return
-
+    int n;
+    cin >> n;
+    while(n--) {
+        i = 0;
+        cin >> s;
+        cout << quadtree() << "\n";
+    }
 }
