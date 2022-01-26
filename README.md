@@ -69,3 +69,6 @@ AOJ 서버 부하가 우려되어 매번 모든 코드를 검증하지 않고, �
 
 
 ## About Study
+📢 Collaborator 권한이 필요하신 경우 카톡이나 `qriositylog@gmail.com` 으로 연락 부탁드립니다.
+
+[스터디 안내](https://github.com/Queue-ri/Advanced-Algorithm-Study/issues/114) | [스터디 자료](https://github.com/Queue-ri/Advanced-Algorithm-Study/issues/115)
