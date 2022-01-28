@@ -65,7 +65,7 @@ AOJ 서버 부하가 우려되어 매번 모든 코드를 검증하지 않고, �
  [`Queue-ri`](https://github.com/Queue-ri) [`yujungee`](https://github.com/yujungee) [`Yunhyunjo`](https://github.com/Yunhyunjo)
  
 ### 스터디 2기
-
+[`ChaeheeKang-GitHub`](https://github.com/ChaeheeKang-GitHub) [`Choi-mina`](https://github.com/Choi-mina) [`profitjean`](https://github.com/profitjean) [`Queue-ri`](https://github.com/Queue-ri) [`Yunhyunjo`](https://github.com/Yunhyunjo)
 
 
 ## About Study
