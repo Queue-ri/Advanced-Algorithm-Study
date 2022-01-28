@@ -37,3 +37,14 @@ jobs:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             with:
                 path: .github/aoji_report.md
+
+          - name: Check Judge Failure
+            id: check_aoji_fail
+            uses: andstor/file-existence-action@v1
+            with:
+                files: ".github/fail.aoji"
+
+          - name: Raise CI Fail
+            if: steps.check_aoji_fail.outputs.files_exists == 'true'
+            run: exit 1
+            

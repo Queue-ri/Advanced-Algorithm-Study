@@ -128,6 +128,7 @@ with open(".github/aoji_report.md", "w", encoding="utf-8") as report:
     if match_df['결과'].values[0] == "정답":
         report.write("✔ **Your code has been accepted!**\n")
     else:
+        open(".github/fail.aoji", "w").close()
         report.write("❌ **UH OH...Your code has not been accepted.**\n")
 
     report.write("\n## 🎯 AOJ Result\n")
