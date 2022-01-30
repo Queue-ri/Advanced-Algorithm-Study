@@ -47,4 +47,4 @@ printf "\`\`\`\n</details>" >> .github/aoji_log.md
 cat .github/aoji_log.md >> .github/aoji_report.md
 
 printf "\n<br>\n" >> .github/aoji_report.md
-printf "\n**1.0.0-alpha.2** | [Developer](https://github.com/Queue-ri) | [Workflow](https://github.com/Queue-ri/Advanced-Algorithm-Study/commit/$3/checks)" >> .github/aoji_report.md
+printf "\n**1.0.0-alpha.3** | [Developer](https://github.com/Queue-ri) | [Workflow](https://github.com/Queue-ri/Advanced-Algorithm-Study/commit/$3/checks)" >> .github/aoji_report.md
