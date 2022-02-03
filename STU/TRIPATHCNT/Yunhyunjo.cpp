@@ -1,63 +1,59 @@
 #include <iostream>
-#include <algorithm>
+#include <vector>
 
 using namespace std;
 
-int tri[100][100];
-int cache[100][100];
-int n;
-
-int triSum();
-
-int main(void) {
+int main() {
 
 	ios::sync_with_stdio(0);
-	cin.tie(NULL);
-	cout.tie(NULL);
+	cin.tie(0); cout.tie(0);
 
-	int c;
+	int c, n;
 	cin >> c;
 
-	while (c--)
-	{
+	while (c--) {
 		cin >> n;
-		cache[0][0] = cache[1][0] = cache[1][1] = 1;
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < i + 1; j++) {
-				cin >> tri[i][j];
+
+		vector <vector <int>> v(n+1, vector <int> (n+1, 0));
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= i; j++) {
+				cin >> v[i][j];
 			}
 		}
 		
-		cout << triSum() << "\n";
-	}
-}
-
-int triSum() {
-	int maxValue = 0, cnt = 0;
-	for (int j = 1; j < n; j++) {
-		for (int i = 0; i <= j; i++) {
-			int a = tri[j][i] + tri[j - 1][i];
-			int b = tri[j][i] + tri[j - 1][i - 1];
-			tri[j][i] = max(a, b);
-			if (a > b) 
-				cache[j][i] = cache[j - 1][i];
-			else if (a < b) 
-				cache[j][i] = cache[j - 1][i - 1];
-			else 
-				cache[j][i] = cache[j - 1][i - 1] + cache[j - 1][i];
-		}
-	}
-
-	for (int i = 0; i < n; i++) {
-		if (tri[n - 1][i] >= maxValue) {
-			if (tri[n - 1][i] == maxValue)
-				cnt += cache[n - 1][i];
-			else {
-				cnt = cache[n - 1][i];
-				maxValue = tri[n - 1][i];
+		vector <vector <int>> dp(n+1, vector <int>(n+1, 0));
+		vector <vector <int>> dp2(n + 1, vector <int>(n + 1, 0));
+		dp[1][1] = v[1][1];
+		dp2 [1][1] = 1;
+		for (int i = 2; i <= n; i++) {
+			for (int j = 1; j <= i; j++) {
+				if (v[i][j] + dp[i - 1][j] > v[i][j] + dp[i - 1][j - 1]) {
+					dp[i][j] = v[i][j] + dp[i - 1][j];
+					dp2[i][j] = dp2[i - 1][j];
+				}
+				else if (v[i][j] + dp[i - 1][j] == v[i][j] + dp[i - 1][j - 1]) {
+					dp[i][j] = v[i][j] + dp[i - 1][j];
+					dp2[i][j] = dp2[i - 1][j] + dp2[i - 1][j - 1];
+				}
+				else {
+					dp[i][j] = v[i][j] + dp[i - 1][j - 1];
+					dp2[i][j] = dp2[i - 1][j - 1];
+				}
 			}
 		}
-	}
+		int max = 0, cnt = 0;
 
-	return cnt;
+		for (int i = 1; i <= n; i++) {
+			if (max < dp[n][i]) {
+				max = dp[n][i];
+				cnt = dp2[n][i];
+			}
+			else if (max == dp[n][i]) cnt += dp2[n][i];
+		}
+
+		cout << cnt << "\n";
+	}
+	
+
+	return 0;
 }
