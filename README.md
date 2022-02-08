@@ -18,7 +18,15 @@
 </p>
 
 
-## Solved Status
+## ✔ Solved Status
+![c++](https://img.shields.io/badge/C++-333333.svg?style=flat-square&logo=c%2B%2B&logoColor=f34b7d)![](https://progress-bar.dev/23/?scale=120&width=150&suffix=+solved+/+120)&nbsp;&nbsp;
+![Python](https://img.shields.io/badge/python-333333?style=flat-square&logo=python&logoColor=3672A5)![](https://progress-bar.dev/7/?scale=120&width=150&suffix=+solved+/+120)
+
+<details>
+    <summary>📋 <b><i>Solved Status Details</i></b></summary>
+    <br />
+    WIP...
+</details>
 
 ## Strict Commit Rule
 
@@ -41,9 +49,7 @@ AC 코드를 커밋할 시 메시지는 **반드시 `<문제ID> <수행시간>`*
 
 ## Auto Submit & Validate
 ### 🎯 What is AOJI?
-AOJI는 AOJ for Integration의 약어로, 커밋한 코드의 AC를 검증하고 채점 레포트를 작성해주는 CI 입니다.
-
-채점 레포트는 GitHub 내의 코멘트로 작성됩니다.
+AOJI는 AOJ for Integration의 약어로, 커밋한 코드의 AC를 검증하고 채점 레포트를 GitHub 코멘트로 작성해주는 CI 입니다.
 
 AOJ 서버 부하가 우려되어 매번 모든 코드를 검증하지 않고, 간소화하여 각 파일의 commit 시에만 검증하고 있습니다.
 
