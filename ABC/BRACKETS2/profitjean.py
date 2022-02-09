@@ -3,24 +3,24 @@ import sys
 case = int(sys.stdin.readline().rstrip())
 for _ in range(case):
     brackets = sys.stdin.readline().rstrip()
-    queue = []
+    stack = []
     answer = "YES"
 
     for char in brackets:
         if char in ['(','[','{']:
-            queue.append(char)
-        elif len(queue) == 0:
+            stack.append(char)
+        elif len(stack) == 0:
             answer = "NO"
             break
-        elif char == ')' and queue[-1] == '(':
-            queue.pop()
-        elif char == ']' and queue[-1] == '[':
-            queue.pop()
-        elif char == '}' and queue[-1] == '{':
-            queue.pop()
+        elif char == ')' and stack[-1] == '(':
+            stack.pop()
+        elif char == ']' and stack[-1] == '[':
+            stack.pop()
+        elif char == '}' and stack[-1] == '{':
+            stack.pop()
         else:
             answer == "NO"
             break
-    if len(queue) > 0:
+    if len(stack) > 0:
         answer = "NO"
     print(answer)
