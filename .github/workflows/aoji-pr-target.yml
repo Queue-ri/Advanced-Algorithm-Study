@@ -72,6 +72,14 @@ jobs:
                 gem install octokit
                 ruby ./.github/comment-pr.rb ${{ secrets.GITHUB_TOKEN }} ${{ github.event.pull_request.number }} ".github/aoji_report.md"
 
+          - name: Delete AOJI Reports
+            uses: geekyeggo/delete-artifact@v1
+            with:
+                name: |
+                    aoji-report
+                    aoji-fail-report
+                failOnError: false
+                
           - name: Raise CI Fail
             if: steps.check_aoji_fail.outputs.files_exists == 'true'
             run: exit 1
