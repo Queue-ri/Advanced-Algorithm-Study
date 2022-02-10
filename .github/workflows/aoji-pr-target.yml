@@ -1,4 +1,4 @@
-name: AOJI PR TARGET
+name: AOJI PR Target
 
 on: 
     pull_request_target:
