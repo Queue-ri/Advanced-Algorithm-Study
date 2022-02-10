@@ -7,7 +7,7 @@
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square"></a>&nbsp;
 <a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-commit.yml"><img src="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-commit.yml/badge.svg"></a>&nbsp;
-<a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-pr.yml"><img src="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-pr.yml/badge.svg?on=pull-request"></a>&nbsp;
+<a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-pr.yml"><img src="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-pr.yml/badge.svg?on=pull-request"></a>
 </p>
 
 <p align="center">
@@ -56,7 +56,7 @@ AOJ 서버 부하가 우려되어 매번 모든 코드를 검증하지 않고, �
 ### 🎯 When does it run?
 다음의 조건이 성립되면 AOJI가 작동합니다.
 
-- `push`, `pull_request` 이벤트
+- `push`, `pull_request`, `pull_request_target` 이벤트
 - 단일 파일 커밋
 - 커밋한 파일명의 형식이 `*.c`, `*.cpp`, `*.py` 중 하나일 때
 
