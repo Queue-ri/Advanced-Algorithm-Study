@@ -1,13 +1,15 @@
-name: AOJI PR
+name: AOJI PR TARGET
 
 on: 
-    pull_request:
+    pull_request_target:
         branches:
             - main
 
 jobs:
     aoji:
-        if: github.event.pull_request.head.repo.full_name == github.repository # not a fork
+        if: | # is a fork
+            github.event.pull_request.head.repo.full_name != github.repository &&
+            contains(github.event.pull_request.labels.*.name, 'aoji-safe')
         name: Run AOJI
         runs-on: ubuntu-latest
         strategy:
@@ -17,6 +19,7 @@ jobs:
         steps:
           - uses: actions/checkout@v2
             with:
+                ref: ${{ github.event.pull_request.head.sha }}
                 fetch-depth: 3
                 
           - name: Run AOJI
