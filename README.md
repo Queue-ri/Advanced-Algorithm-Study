@@ -5,6 +5,10 @@
 <p align="center"><b>📖 알고리즘 문제 해결 전략(종만북) AC 풀이 모음집</b></p>
 
 <p align="center">
+<a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/issues/114)">💬<b>스터디 안내</b></a> | <a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/issues/115">📚<b>스터디 자료</b></a>
+</p>
+
+<p align="center">
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square"></a>&nbsp;
 <a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-commit.yml"><img src="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-commit.yml/badge.svg"></a>&nbsp;
 <a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-pr.yml"><img src="https://github.com/Queue-ri/Advanced-Algorithm-Study/actions/workflows/aoji-pr.yml/badge.svg?on=pull-request"></a>
@@ -74,7 +78,5 @@ AOJ 서버 부하가 우려되어 매번 모든 코드를 검증하지 않고, �
 [`ChaeheeKang-GitHub`](https://github.com/ChaeheeKang-GitHub) [`Choi-mina`](https://github.com/Choi-mina) [`profitjean`](https://github.com/profitjean) [`Queue-ri`](https://github.com/Queue-ri) [`Yunhyunjo`](https://github.com/Yunhyunjo)
 
 
-## About Study
-📢 Collaborator 권한이 필요하신 경우 카톡이나 `qriositylog@gmail.com` 으로 연락 부탁드립니다.
-
-[스터디 안내](https://github.com/Queue-ri/Advanced-Algorithm-Study/issues/114) | [스터디 자료](https://github.com/Queue-ri/Advanced-Algorithm-Study/issues/115)
+## Contact
+📢 Collaborator 권한이 필요하시거나 기타 문의는 카톡 또는 `qriositylog@gmail.com` 으로 연락 부탁드립니다.
