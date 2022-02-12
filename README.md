@@ -5,7 +5,7 @@
 <p align="center"><b>📖 알고리즘 문제 해결 전략(종만북) AC 풀이 모음집</b></p>
 
 <p align="center">
-<a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/issues/114)">💬<b>스터디 안내</b></a> | <a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/issues/115">📚<b>스터디 자료</b></a>
+<a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/issues/114">💬<b>스터디 안내</b></a> | <a href="https://github.com/Queue-ri/Advanced-Algorithm-Study/issues/115">📚<b>스터디 자료</b></a>
 </p>
 
 <p align="center">
