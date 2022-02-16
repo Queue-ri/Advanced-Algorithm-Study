@@ -26,10 +26,92 @@
 ![c++](https://img.shields.io/badge/C++-333333.svg?style=flat-square&logo=c%2B%2B&logoColor=f34b7d)![](https://progress-bar.dev/23/?scale=120&width=150&suffix=+solved+/+120)&nbsp;&nbsp;
 ![Python](https://img.shields.io/badge/python-333333?style=flat-square&logo=python&logoColor=3672A5)![](https://progress-bar.dev/7/?scale=120&width=150&suffix=+solved+/+120)
 
-<details>
-    <summary>📋 <b><i>Solved Status Details</i></b></summary>
-    <br />
-    WIP...
+<details><summary>📋 <b><i>Solved Status Details</i></b></summary>
+<p>
+
+| Mark | Meaning                         |
+|:----:|:-------------------------------:|
+|      | This problem is not solved yet. |
+| ✔    | This language is supported in AOJ. |
+| ❌   | This language is not supported in AOJ. |
+
+<details><summary>📂 <b>ABC</b>&nbsp;&nbsp;<img src="https://progress-bar.dev/5/?scale=10&width=150&suffix=+solved+/+10"></summary>
+<p>
+
+| Problem ID | C++ | Python |
+|:----------:|:---:|:------:|
+| ASYMTILING | ✔ 0ms |  |
+| BOARDCOVER | ✔ 0ms |  |
+| BOGGLE | ✔ ---- |  |
+| BRACKETS2 | ✔ 4ms | ✔ 92ms |
+| CLOCKSYNC | ✔ ---- |  |
+    
+</p>
+</details>
+
+<details><summary>📂 <b>DEF</b></summary>
+<p>
+    
+WIP..
+    
+</p>
+</details>
+
+<details><summary>📂 <b>GHI</b></summary>
+<p>
+    
+WIP..
+    
+</p>
+</details>
+
+<details><summary>📂 <b>JKL</b></summary>
+<p>
+    
+WIP..
+    
+</p>
+</details>
+
+<details><summary>📂 <b>MNO</b></summary>
+<p>
+    
+WIP..
+    
+</p>
+</details>
+
+<details><summary>📂 <b>PQR</b></summary>
+<p>
+    
+WIP..
+    
+</p>
+</details>
+
+<details><summary>📂 <b>STU</b></summary>
+<p>
+    
+WIP..
+    
+</p>
+</details>
+
+<details><summary>📂 <b>VWX</b></summary>
+<p>
+    
+WIP..
+    
+</p>
+</details>
+
+<details><summary>📂 <b>YZ</b></summary>
+<p>
+    
+WIP..
+    
+</p>
+</details>
 </details>
 
 ## Strict Commit Rule
