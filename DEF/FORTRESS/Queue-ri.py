@@ -2,8 +2,6 @@ import sys
 input = sys.stdin.readline
 
 def main():
-    wall, connected, children = [], [], []
-
     def inner(a, b): # check inner a
         d = (a[0]-b[0])**2 + (a[1]-b[1])**2
         return d < a[2]**2
@@ -38,9 +36,9 @@ def main():
             if not connected[i]: # b is not connected yet
                 if not grandchild(0, i):
                     children[0].append(i)
+
         best = 0 # leaf to leaf
         print(max(max_level(0), best))
-
 
 if __name__ == '__main__':
     main()
