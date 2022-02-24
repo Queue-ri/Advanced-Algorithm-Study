@@ -98,7 +98,7 @@ match_df = df.loc[df['#'] == match_JID]
 
 URL = 'https://algospot.com/judge/submission/recent/?problem=' + ID + '&user=' + sys.argv[1] + '&language=' + lang + '&state='
 
-while match_df['결과'].values[0] == "컴파일중" or match_df['결과'].values[0] == "실행중":
+while match_df['결과'].values[0] == "컴파일중" or match_df['결과'].values[0] == "실행중" or match_df['결과'].values[0] == "수신":
     print("---")
     print("AOJ server is busy. Wait 5 seconds.")
     time.sleep(5)
